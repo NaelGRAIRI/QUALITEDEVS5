@@ -1,7 +1,7 @@
 # QUALITEDEVS5
 
-# Projet de Qualité Dev pour le semestre 5 du BUT informatique
+# Projet de Qualité Dev pour le semestre 5 du BUT Informatique
 
-## Memembres de l'équipe :
+## Membres de l'équipe :
 - GRAIRI Naël
 - BERTON Lucas
