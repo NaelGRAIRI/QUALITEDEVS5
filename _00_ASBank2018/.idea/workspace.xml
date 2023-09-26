@@ -40,16 +40,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/naelgrairi/QUALITEDEVS5/_00_ASBank2018/src/main/webapp",
+    "last_opened_file_path": "/Users/lucasberton/Qualitedev/QUALITEDEVS5/_00_ASBank2018",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -197,13 +197,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="_00_ASBank2018:war exploded" />
-        </option>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="_00_ASBank2018:war" />
-          <artifact name="_00_ASBank2018:war exploded" />
-        </option>
-        <option name="BuildArtifacts" enabled="true">
           <artifact name="_00_ASBank2018:war" />
           <artifact name="_00_ASBank2018:war exploded" />
         </option>
@@ -231,6 +224,7 @@
       <workItem from="1695642546701" duration="759000" />
       <workItem from="1695715483179" duration="601000" />
       <workItem from="1695716340639" duration="179000" />
+      <workItem from="1695738819176" duration="1072000" />
     </task>
     <servers />
   </component>

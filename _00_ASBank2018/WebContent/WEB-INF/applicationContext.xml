@@ -48,7 +48,8 @@
 		<!-- <property name="url"
 			value="jdbc:mysql://localhost:3306/bankiut?useSSL=false" />
 		<property name="username" value="root" />
-		<property name="password" value="" /> -->
+		<property name="password" value="root" /> -->
+
 		<property name="url" value="jdbc:mysql://localhost:3306/bankiut"
 			/> <property name="username" value="root" /> <property name="password"
 			value="" />
@@ -75,8 +76,7 @@
 	</bean>
 
 	<!-- Injection de la Dao dans le BankManager par le setter -->
-	<bean id="banqueManager"
-		class="com.iut.banque.facade.BanqueManager">
+	<bean id="banqueManager" class="com.iut.banque.facade.BanqueManager">
 		<property name="dao" ref="daoHibernate" />
 	</bean>
 
