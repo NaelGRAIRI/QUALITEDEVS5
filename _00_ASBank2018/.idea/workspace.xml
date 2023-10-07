@@ -68,7 +68,7 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.80">
+  <component name="RunManager" selected="Maven._00_ASBank2018 [clean,install]">
     <configuration name="_00_ASBank2018 [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -231,7 +231,8 @@
       <workItem from="1695828778705" duration="7000" />
       <workItem from="1695901463294" duration="114000" />
       <workItem from="1695984301851" duration="323000" />
-      <workItem from="1696667098102" duration="798000" />
+      <workItem from="1696667098102" duration="2380000" />
+      <workItem from="1696678569456" duration="1125000" />
     </task>
     <servers />
   </component>
