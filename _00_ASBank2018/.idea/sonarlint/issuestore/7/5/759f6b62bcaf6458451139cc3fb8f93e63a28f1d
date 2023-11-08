@@ -1,0 +1,16 @@
+
+p
+java:S2293å"YReplace the type specification in this constructor call with the diamond operator ("<>").(°¸õÓ
+u
+java:S2293ô"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò®©Òøÿÿÿÿ
+s
+java:S1488Ù"\Immediately return this expression instead of assigning it to the temporary variable "user".(›Õ€
+\
+java:S2095Ä"EUse try-with-resources or close this "Session" in a "finally" clause.(Í¸Ù¡
+@	java:S106&"+Replace this use of System.out by a logger.(ş»Ş
+E	java:S106'"+Replace this use of System.out by a logger.(®ÍÛÈşÿÿÿÿ
+:
+java:S1168~"$Return an empty map instead of null.(¥¹ï
+R
+java:S1854Ä";Remove this useless assignment to local variable "session".(Í¸Ù¡
+F	java:S106€"+Replace this use of System.out by a logger.(˜×‘Ùúÿÿÿÿ

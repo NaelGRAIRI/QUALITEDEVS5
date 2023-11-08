@@ -49,7 +49,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -68,7 +68,31 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="Maven._00_ASBank2018 [clean,install]">
+  <component name="RunManager" selected="JUnit.All in _00_ASBank2018">
+    <configuration name="All in _00_ASBank2018" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_00_ASBank2018" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_00_ASBank2018" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iut.banque.test.modele.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iut.banque.test.modele" />
+      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.modele.TestsClient" />
+      <option name="METHOD_NAME" value="testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_00_ASBank2018 [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -203,9 +227,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in _00_ASBank2018" />
+      <item itemvalue="JUnit.TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
       <item itemvalue="Maven._00_ASBank2018 [clean,install]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.80" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in _00_ASBank2018" />
+        <item itemvalue="JUnit.TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
@@ -233,6 +265,12 @@
       <workItem from="1695984301851" duration="323000" />
       <workItem from="1696667098102" duration="2380000" />
       <workItem from="1696678569456" duration="1125000" />
+      <workItem from="1697021863512" duration="44000" />
+      <workItem from="1698309089462" duration="3088000" />
+      <workItem from="1698398638248" duration="197000" />
+      <workItem from="1698398874921" duration="1096000" />
+      <workItem from="1699275225519" duration="598000" />
+      <workItem from="1699446913980" duration="821000" />
     </task>
     <servers />
   </component>
