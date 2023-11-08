@@ -6,3 +6,4 @@
 - GRAIRI Naël
 - BERTON Lucas
 - ALOUI Mohamed
+- DIALLO Mamadou
