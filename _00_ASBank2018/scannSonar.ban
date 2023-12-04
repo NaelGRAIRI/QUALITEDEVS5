@@ -1,0 +1,5 @@
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=BankIUT \
+  -Dsonar.projectName='BankIUT' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token= sqp_1b349ca252ef8409ec6d0236609e890a591d26a2

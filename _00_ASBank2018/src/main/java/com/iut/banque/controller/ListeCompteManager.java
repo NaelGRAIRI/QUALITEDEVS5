@@ -26,7 +26,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Constructeur de la classe Connect
-	 * 
+	 *
 	 * @return Un objet de type Connect avec façade BanqueFacade provenant de sa
 	 *         factory
 	 */
@@ -40,7 +40,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Méthode qui va renvoer la liste de tous les clients sous forme de hashmap
-	 * 
+	 *
 	 * @return Map<String,Client> : la hashmap correspondant au résultat
 	 */
 	public Map<String, Client> getAllClients() {
@@ -50,7 +50,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Getter pour le champ aDecouvert.
-	 * 
+	 *
 	 * @return boolean : la valeur du champ aDecouvert
 	 */
 	public boolean isaDecouvert() {
@@ -59,7 +59,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Setter pour le champ aDecouvert.
-	 * 
+	 *
 	 * @param aDecouvert
 	 *            : la valeur de ce qu'on veut définir
 	 */
@@ -129,7 +129,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Action appelée pour supprimer un utilisateur
-	 * 
+	 *
 	 * @return String, le status de l'opération
 	 */
 	public String deleteUser() {
@@ -148,7 +148,7 @@ public class ListeCompteManager extends ActionSupport {
 
 	/**
 	 * Action appelée pour supprimer un compte
-	 * 
+	 *
 	 * @return String, le status de l'opération
 	 */
 	public String deleteAccount() {

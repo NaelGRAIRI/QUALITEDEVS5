@@ -3,8 +3,8 @@ package com.iut.banque.converter;
 import java.util.Map;
 
 import org.apache.struts2.util.StrutsTypeConverter;
-
 import com.opensymphony.xwork2.conversion.TypeConversionException;
+
 
 import com.iut.banque.interfaces.IDao;
 import com.iut.banque.modele.Client;
@@ -62,13 +62,20 @@ public class ClientConverter extends StrutsTypeConverter {
 	@SuppressWarnings("rawtypes")
 	@Override
 	public Object convertFromString(Map context, String[] values, Class classe) {
-		Client client = null;
-		client = (Client) dao.getUserById(values[0]);
-		if (client == null) {
-			throw new TypeConversionException("Impossible de convertir la chaine suivante : " + values[0]);
+		if (values == null || values.length == 0 || classe == null || !Client.class.isAssignableFrom(classe)) {
+			throw new TypeConversionException("Paramètres invalides pour la conversion.");
 		}
+
+		String clientId = values[0];
+		Client client = (Client) dao.getUserById(clientId);
+
+		if (client == null) {
+			throw new TypeConversionException("Impossible de convertir la chaîne suivante en client : " + clientId);
+		}
+
 		return client;
 	}
+
 
 	/**
 	 * Permet la conversion automatique par Struts d'un Client vers une chaine

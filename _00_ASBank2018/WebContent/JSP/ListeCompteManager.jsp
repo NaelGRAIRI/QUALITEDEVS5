@@ -96,11 +96,11 @@
 									</s:param>
 								</s:url>
 								<td><s:a href="%{editAccount}">
-										<img
-											src="http://freeflaticons.com/wp-content/uploads/2014/10/write-copy-14138051958gn4k.png"
+									<img
+											src="https://freeflaticons.com/wp-content/uploads/2014/10/write-copy-14138051958gn4k.png"
 											style="width: 20px; height: 20px" alt="Editer ce compte"
-											title="Editer ce compte" />
-									</s:a></td>
+											title="Editer ce compte"/>
+								</s:a></td>
 								<td><s:url action="deleteAccount" var="deleteAccount">
 										<s:param name="compte">
 											<s:property value="value.numeroCompte" />

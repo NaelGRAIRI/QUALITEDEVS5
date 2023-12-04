@@ -22,9 +22,9 @@ public class DetailCompte extends ActionSupport {
 
 	/**
 	 * Constructeur du controlleur DetailCompte
-	 * 
+	 *
 	 * Récupère l'ApplicationContext
-	 * 
+	 *
 	 * @return un nouvel objet DetailCompte avec une BanqueFacade provenant de
 	 *         la factory
 	 */
@@ -38,23 +38,23 @@ public class DetailCompte extends ActionSupport {
 	/**
 	 * Retourne sous forme de string le message d'erreur basé sur le champ
 	 * "error" actuellement défini dans la classe
-	 * 
+	 *
 	 * @return String, le string avec le détail du message d'erreur
 	 */
 	public String getError() {
 		switch (error) {
-		case "TECHNICAL":
-			return "Erreur interne. Verifiez votre saisie puis réessayer. Contactez votre conseiller si le problème persiste.";
-		case "BUSINESS":
-			return "Fonds insuffisants.";
-		case "NEGATIVEAMOUNT":
-			return "Veuillez rentrer un montant positif.";
-		case "NEGATIVEOVERDRAFT":
-			return "Veuillez rentrer un découvert positif.";
-		case "INCOMPATIBLEOVERDRAFT":
-			return "Le nouveau découvert est incompatible avec le solde actuel.";
-		default:
-			return "";
+			case "TECHNICAL":
+				return "Erreur interne. Verifiez votre saisie puis réessayer. Contactez votre conseiller si le problème persiste.";
+			case "BUSINESS":
+				return "Fonds insuffisants.";
+			case "NEGATIVEAMOUNT":
+				return "Veuillez rentrer un montant positif.";
+			case "NEGATIVEOVERDRAFT":
+				return "Veuillez rentrer un découvert positif.";
+			case "INCOMPATIBLEOVERDRAFT":
+				return "Le nouveau découvert est incompatible avec le solde actuel.";
+			default:
+				return "";
 		}
 	}
 
@@ -62,7 +62,7 @@ public class DetailCompte extends ActionSupport {
 	 * Permet de définir le champ error de la classe avec le string passé en
 	 * paramètre. Si jamais on passe un objet null, on adapte le string
 	 * automatiquement en "EMPTY"
-	 * 
+	 *
 	 * @param error
 	 *            : Un String correspondant à celui qu'on veut définir dans le
 	 *            champ error
@@ -77,7 +77,7 @@ public class DetailCompte extends ActionSupport {
 
 	/**
 	 * Getter du champ montant
-	 * 
+	 *
 	 * @return String : valeur du champ montant
 	 */
 	public String getMontant() {
@@ -86,7 +86,7 @@ public class DetailCompte extends ActionSupport {
 
 	/**
 	 * Setter du champ montant
-	 * 
+	 *
 	 * @param montant
 	 *            un String correspondant au montant à définir
 	 */
@@ -99,7 +99,7 @@ public class DetailCompte extends ActionSupport {
 	 * de l'utilisateur connecté dans un premier temps. Récupère ensuite dans la
 	 * HashMap la clé qui comporte le string provenant de idCompte. Renvoie donc
 	 * null si le compte n'appartient pas à l'utilisateur
-	 * 
+	 *
 	 * @return Compte : l'objet compte après s'être assuré qu'il appartient à
 	 *         l'utilisateur
 	 */
@@ -120,7 +120,7 @@ public class DetailCompte extends ActionSupport {
 
 	/**
 	 * Méthode débit pour débter le compte considéré en cours
-	 * 
+	 *
 	 * @return String : Message correspondant à l'état du débit (si il a réussi
 	 *         ou pas)
 	 */
@@ -143,7 +143,7 @@ public class DetailCompte extends ActionSupport {
 
 	/**
 	 * Méthode crédit pour créditer le compte considéré en cours
-	 * 
+	 *
 	 * @return String : Message correspondant à l'état du crédit (si il a réussi
 	 *         ou pas)
 	 */

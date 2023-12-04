@@ -10,6 +10,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 import com.iut.banque.exceptions.IllegalFormatException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
  * Classe représentant un utilisateur quelconque.
@@ -27,7 +28,7 @@ import com.iut.banque.exceptions.IllegalFormatException;
 @Table(name = "Utilisateur")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING, length = 15)
-public abstract class Utilisateur {
+public class Utilisateur {
 
 	/**
 	 * L'identifiant (unique) de l'utilisateur.
@@ -156,10 +157,19 @@ public abstract class Utilisateur {
 	 * @param userPwd
 	 *            : le mot de passe de l'utilisateur
 	 */
+// creer par Mamadou le 20.11.2023
 	public void setUserPwd(String userPwd) {
-		this.userPwd = userPwd;
+		// Utilisation de BCrypt pour hacher le mot de passe
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		this.userPwd = passwordEncoder.encode(userPwd);
 	}
 
+	// Méthode pour vérifier un mot de passe haché
+	public boolean checkPassword(String plainTextPassword) {
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		return passwordEncoder.matches(plainTextPassword, this.userPwd);
+	}
+//////////////////////////////////////////////
 	/**
 	 * Constructeur de Utilisateur avec tous les champs de la classe comme
 	 * paramètres.

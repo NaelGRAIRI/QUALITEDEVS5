@@ -23,7 +23,7 @@ public class Connect extends ActionSupport {
 
 	/**
 	 * Constructeur de la classe Connect
-	 * 
+	 *
 	 * @return Un objet de type Connect avec façade BanqueFacade provenant de sa
 	 *         factory
 	 */
@@ -38,7 +38,7 @@ public class Connect extends ActionSupport {
 	/**
 	 * Méthode pour vérifier la connexion de l'utilisateur basé sur les
 	 * paramêtres userCde et userPwd de cette classe
-	 * 
+	 *
 	 * @return String, le resultat du login; "SUCCESS" si réussi, "ERROR" si
 	 *         échec
 	 */
@@ -59,24 +59,24 @@ public class Connect extends ActionSupport {
 		}
 
 		switch (loginResult) {
-		case LoginConstants.USER_IS_CONNECTED:
-			System.out.println("user logged in");
-			return "SUCCESS";
-		case LoginConstants.MANAGER_IS_CONNECTED:
-			System.out.println("manager logged in");
-			return "SUCCESSMANAGER";
-		case LoginConstants.LOGIN_FAILED:
-			System.out.println("login failed");
-			return "ERROR";
-		default:
-			System.out.println("error");
-			return "ERROR";
+			case LoginConstants.USER_IS_CONNECTED:
+				System.out.println("user logged in");
+				return "SUCCESS";
+			case LoginConstants.MANAGER_IS_CONNECTED:
+				System.out.println("manager logged in");
+				return "SUCCESSMANAGER";
+			case LoginConstants.LOGIN_FAILED:
+				System.out.println("login failed");
+				return "ERROR";
+			default:
+				System.out.println("error");
+				return "ERROR";
 		}
 	}
 
 	/**
 	 * Getter du champ userCde
-	 * 
+	 *
 	 * @return String, le userCde de la classe
 	 */
 	public String getUserCde() {
@@ -85,7 +85,7 @@ public class Connect extends ActionSupport {
 
 	/**
 	 * Setter du champ userCde
-	 * 
+	 *
 	 * @param userCde
 	 *            : String correspondant au userCode à établir
 	 */
@@ -95,7 +95,7 @@ public class Connect extends ActionSupport {
 
 	/**
 	 * Getter du champ userPwd
-	 * 
+	 *
 	 * @return String, le userPwd de la classe
 	 */
 	public String getUserPwd() {
@@ -104,7 +104,7 @@ public class Connect extends ActionSupport {
 
 	/**
 	 * Setter du champ userPwd
-	 * 
+	 *
 	 * @param userPwd
 	 *            : correspondant au pwdCde à établir
 	 */
@@ -115,7 +115,7 @@ public class Connect extends ActionSupport {
 	/**
 	 * Getter du champ utilisateur (uilisé pour récupérer l'utilisateur
 	 * actuellement connecté à l'application)
-	 * 
+	 *
 	 * @return Utilisateur, l'utilisateur de la classe
 	 */
 	public Utilisateur getConnectedUser() {
@@ -125,7 +125,7 @@ public class Connect extends ActionSupport {
 	/**
 	 * Méthode qui va récupérer sous forme de map la liste des comptes du client
 	 * actuellement connecté à l'application
-	 * 
+	 *
 	 * @return Map<String, Compte> correspondant à l'ID du compte et l'objet
 	 *         Compte associé
 	 */

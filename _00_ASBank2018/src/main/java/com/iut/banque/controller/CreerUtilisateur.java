@@ -158,7 +158,7 @@ public class CreerUtilisateur extends ActionSupport {
 	/**
 	 * Renvoie Le message à afficher si la création d'un utilisateur vient
 	 * d'être essayée.
-	 * 
+	 *
 	 * @return le message de l'action précédente
 	 */
 	public String getMessage() {
@@ -167,7 +167,7 @@ public class CreerUtilisateur extends ActionSupport {
 
 	/**
 	 * Setter du message provenant de l'action précedente.
-	 * 
+	 *
 	 * @param message
 	 */
 	public void setMessage(String message) {
@@ -177,7 +177,7 @@ public class CreerUtilisateur extends ActionSupport {
 	/**
 	 * Le result indique si l'utilisateur vient d'arriver sur la page ou a tenté
 	 * la création d'un utilisateur précedemment.
-	 * 
+	 *
 	 * @return le status de l'action précedente.
 	 */
 	public String getResult() {
@@ -186,7 +186,7 @@ public class CreerUtilisateur extends ActionSupport {
 
 	/**
 	 * Setter du result de l'action précedente
-	 * 
+	 *
 	 * @param result
 	 */
 	public void setResult(String result) {
@@ -195,7 +195,7 @@ public class CreerUtilisateur extends ActionSupport {
 
 	/**
 	 * Création d'un utilisateur.
-	 * 
+	 *
 	 * @return String : le status de l'action
 	 */
 	public String creationUtilisateur() {

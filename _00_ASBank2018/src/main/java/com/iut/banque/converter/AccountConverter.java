@@ -13,7 +13,7 @@ import com.iut.banque.modele.Compte;
  * Cette classe contient des méthodes permettant de convertir un compte en
  * string et vice-versa. Elle est déclarée dans
  * «src/main/webapp/WEB-INF/classes/xwork-conversion.properties.
- * 
+ *
  * Grâce à cette classe il est possible de passer en paramêtre d'une action
  * Struts le numéro d'un compte (une string) et le contrôleur qui va
  * recevoir le paramêtre n'a besoin que d'un setter prenant un objet de type
@@ -24,7 +24,7 @@ public class AccountConverter extends StrutsTypeConverter {
 	/**
 	 * DAO utilisée pour récuperer les objets correspondants à l'id passé en
 	 * paramêtre de convertFromString.
-	 * 
+	 *
 	 * Note : Ce champ est static car pour une raison qui nous échappe, le scope
 	 * « singleton » du bean Spring utilisé pour l'injection n'est pas respecté.
 	 * Ainsi, au chargement de l'application, trois objets de cette classe sont
@@ -34,9 +34,9 @@ public class AccountConverter extends StrutsTypeConverter {
 
 	/**
 	 * Constructeur avec paramêtre pour le AccountConverter.
-	 * 
+	 *
 	 * Utilisé pour l'injection de dépendance.
-	 * 
+	 *
 	 * @param dao
 	 */
 	public AccountConverter(IDao dao) {

@@ -26,8 +26,7 @@ public class DetailCompteEdit extends DetailCompte {
 	}
 
 	/**
-	 * @param decouvertAutorise
-	 *            the decouvertAutorise to set
+	 * @param decouvertAutorise the decouvertAutorise to set
 	 */
 	public void setDecouvertAutorise(String decouvertAutorise) {
 		this.decouvertAutorise = decouvertAutorise;
@@ -35,25 +34,33 @@ public class DetailCompteEdit extends DetailCompte {
 
 	/**
 	 * Permet le changement de découvert d'un compte avec découvert.
-	 * 
+	 *
 	 * @return le status de l'action
 	 */
 	public String changementDecouvert() {
+		// Vérifie si le compte est une instance de CompteAvecDecouvert
 		if (!(getCompte() instanceof CompteAvecDecouvert)) {
 			return "ERROR";
 		}
+
 		try {
+			// Essaye de convertir la chaîne decouvertAutorise en double
 			Double decouvert = Double.parseDouble(decouvertAutorise);
+
+			// Appelle la méthode changeDecouvert du service banque
 			banque.changeDecouvert((CompteAvecDecouvert) getCompte(), decouvert);
+
 			return "SUCCESS";
 		} catch (NumberFormatException nfe) {
+			// Gère l'exception si la conversion en double échoue
 			nfe.printStackTrace();
 			return "ERROR";
 		} catch (IllegalFormatException e) {
+			// Gère l'exception si le format du decouvertAutorise est incorrect
 			return "NEGATIVEOVERDRAFT";
 		} catch (IllegalOperationException e) {
+			// Gère l'exception si l'opération est illégale
 			return "INCOMPATIBLEOVERDRAFT";
 		}
 	}
-
 }
