@@ -277,4 +277,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__2_.ic" NAME="All in _00_ASBank2018 (2) Coverage Results" MODIFIED="1701512503787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__3_.ic" NAME="All in _00_ASBank2018 (3) Coverage Results" MODIFIED="1701691175370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__4_.ic" NAME="All in _00_ASBank2018 (4) Coverage Results" MODIFIED="1701692950253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$Tomcat_9_0_80.ic" NAME="Tomcat 9.0.80 Coverage Results" MODIFIED="1699529335900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
 </project>
