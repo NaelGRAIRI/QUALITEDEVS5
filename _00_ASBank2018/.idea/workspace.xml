@@ -85,7 +85,7 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.80">
+  <component name="RunManager" selected="JUnit.All in _00_ASBank2018 (4)">
     <configuration name="All in _00_ASBank2018 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in _00_ASBank2018" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in _00_ASBank2018 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -110,32 +110,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestsClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in _00_ASBank2018 (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.iut.banque.test.modele.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.iut.banque.test.modele" />
-      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.modele.TestsClient" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in _00_ASBank2018" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.iut.banque.test.modele.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.iut.banque.test.modele" />
-      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.modele.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -275,21 +261,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in _00_ASBank2018 (3)" />
+      <item itemvalue="JUnit.All in _00_ASBank2018 (4)" />
       <item itemvalue="JUnit.All in _00_ASBank2018 (1)" />
       <item itemvalue="JUnit.All in _00_ASBank2018 (2)" />
-      <item itemvalue="JUnit.TestsClient" />
-      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.All in _00_ASBank2018" />
       <item itemvalue="Maven._00_ASBank2018 [clean,install]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.80" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in _00_ASBank2018 (4)" />
+        <item itemvalue="JUnit.All in _00_ASBank2018 (3)" />
         <item itemvalue="JUnit.All in _00_ASBank2018 (2)" />
         <item itemvalue="JUnit.All in _00_ASBank2018 (1)" />
         <item itemvalue="JUnit.All in _00_ASBank2018" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.TestsClient" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +310,7 @@
       <workItem from="1698398884463" duration="6925000" />
       <workItem from="1699445057493" duration="1895000" />
       <workItem from="1699612917000" duration="10860000" />
-      <workItem from="1700506524772" duration="54975000" />
+      <workItem from="1700506524772" duration="60866000" />
     </task>
     <servers />
   </component>
@@ -356,6 +342,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__2_.ic" NAME="All in _00_ASBank2018 (2) Coverage Results" MODIFIED="1701512503787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__3_.ic" NAME="All in _00_ASBank2018 (3) Coverage Results" MODIFIED="1701691175370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__4_.ic" NAME="All in _00_ASBank2018 (4) Coverage Results" MODIFIED="1701692950253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/_00_ASBank2018$Tomcat_9_0_80.ic" NAME="Tomcat 9.0.80 Coverage Results" MODIFIED="1699529335900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

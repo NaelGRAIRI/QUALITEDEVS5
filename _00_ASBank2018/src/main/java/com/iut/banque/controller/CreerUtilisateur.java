@@ -2,6 +2,7 @@ package com.iut.banque.controller;
 
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.ApplicationContext;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.iut.banque.exceptions.IllegalFormatException;
@@ -96,9 +97,19 @@ public class CreerUtilisateur extends ActionSupport {
 	 * @param userPwd
 	 *            the userPwd to set
 	 */
+	// creer par Mamadou le 20.11.2023
 	public void setUserPwd(String userPwd) {
-		this.userPwd = userPwd;
+		// Utilisation de BCrypt pour hacher le mot de passe
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		this.userPwd = passwordEncoder.encode(userPwd);
 	}
+
+	// Méthode pour vérifier un mot de passe haché
+	public boolean checkPassword(String plainTextPassword) {
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		return passwordEncoder.matches(plainTextPassword, this.userPwd);
+	}
+//////////////////////////////////////////////
 
 	/**
 	 * @return the male

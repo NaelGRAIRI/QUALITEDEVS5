@@ -1,5 +1,6 @@
 package com.iut.banque.dao;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,13 +19,19 @@ import com.iut.banque.modele.CompteAvecDecouvert;
 import com.iut.banque.modele.CompteSansDecouvert;
 import com.iut.banque.modele.Gestionnaire;
 import com.iut.banque.modele.Utilisateur;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 /**
  * Implémentation de IDao utilisant Hibernate.
- *
+ * <p>
  * Les transactions sont gerés par Spring et utilise le transaction manager
  * défini dans l'application Context.
- *
+ *<p></p>
  * Par défaut, la propagation des transactions est REQUIRED, ce qui signifie que
  * si une transaction est déjà commencé elle va être réutilisée. Cela est util
  * pour les tests unitaires de la DAO.
@@ -32,16 +39,18 @@ import com.iut.banque.modele.Utilisateur;
 @Transactional
 public class DaoHibernate implements IDao {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(DaoHibernate.class);
+
 	private SessionFactory sessionFactory;
 
-	public DaoHibernate() {
-		System.out.println("==================");
-		System.out.println("Création de la Dao");
+	public DaoHibernate(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
 	}
+
 
 	/**
 	 * Setter pour la SessionFactory.
-	 *
+	 *<p></p>
 	 * Cette méthode permet à Spring d'injecter la factory au moment de la
 	 * construction de la DAO.
 	 *
@@ -56,16 +65,17 @@ public class DaoHibernate implements IDao {
 	 * {@inheritDoc}
 	 * @throws IllegalOperationException
 	 */
+
+
 	@Override
 	public CompteAvecDecouvert createCompteAvecDecouvert(double solde, String numeroCompte, double decouvertAutorise,
 														 Client client) throws TechnicalException, IllegalFormatException, IllegalOperationException {
 		Session session = sessionFactory.getCurrentSession();
-		CompteAvecDecouvert compte = session.get(CompteAvecDecouvert.class, numeroCompte);
-		if (compte != null) {
+		if (session.get(CompteAvecDecouvert.class, numeroCompte) != null) {
 			throw new TechnicalException("Numéro de compte déjà utilisé.");
 		}
 
-		compte = new CompteAvecDecouvert(numeroCompte, solde, decouvertAutorise, client);
+		CompteAvecDecouvert compte = new CompteAvecDecouvert(numeroCompte, solde, decouvertAutorise, client);
 		client.addAccount(compte);
 		session.save(compte);
 
@@ -120,12 +130,9 @@ public class DaoHibernate implements IDao {
 	public Map<String, Compte> getAccountsByClientId(String id) {
 		Session session = sessionFactory.getCurrentSession();
 		Client client = session.get(Client.class, id);
-		if (client != null) {
-			return client.getAccounts();
-		} else {
-			return null;
-		}
+		return (client != null) ? client.getAccounts() : Collections.emptyMap();
 	}
+
 
 	/**
 	 * {@inheritDoc}
@@ -163,6 +170,7 @@ public class DaoHibernate implements IDao {
 		return user;
 	}
 
+
 	/**
 	 * {@inheritDoc}
 	 */
@@ -189,23 +197,14 @@ public class DaoHibernate implements IDao {
 	 */
 	@Override
 	public boolean isUserAllowed(String userId, String userPwd) {
-		Session session = null;
-		if (userId == null || userPwd == null) {
+		if (userId == null || userPwd == null || userId.trim().isEmpty() || userPwd.trim().isEmpty()) {
 			return false;
-		} else {
-			session = sessionFactory.openSession();
-			userId = userId.trim();
-			if ("".equals(userId) || "".equals(userPwd)) {
-				return false;
-			} else {
-				session = sessionFactory.getCurrentSession();
-				Utilisateur user = session.get(Utilisateur.class, userId);
-				if (user == null) {
-					return false;
-				}
-				return (userPwd.equals(user.getUserPwd()));
-			}
 		}
+
+		Session session = sessionFactory.getCurrentSession();
+		Utilisateur user = session.get(Utilisateur.class, userId);
+
+		return (user != null && userPwd.equals(user.getUserPwd()));
 	}
 
 	/**
@@ -213,10 +212,9 @@ public class DaoHibernate implements IDao {
 	 */
 	@Override
 	public Utilisateur getUserById(String id) {
-		Session session = sessionFactory.getCurrentSession();
-		Utilisateur user = session.get(Utilisateur.class, id);
-		return user;
+		return sessionFactory.getCurrentSession().get(Utilisateur.class, id);
 	}
+
 
 	/**
 	 * {@inheritDoc}
@@ -225,13 +223,14 @@ public class DaoHibernate implements IDao {
 	public Map<String, Client> getAllClients() {
 		Session session = sessionFactory.getCurrentSession();
 		@SuppressWarnings("unchecked")
-		List<Object> res = session.createCriteria(Client.class).list();
-		Map<String, Client> ret = new HashMap<String, Client>();
-		for (Object client : res) {
-			ret.put(((Client) client).getUserId(), (Client) client);
+		List<Client> clients = session.createQuery("FROM Client").list();
+		Map<String, Client> clientMap = new HashMap<>();
+		for (Client client : clients) {
+			clientMap.put(client.getUserId(), client);
 		}
-		return ret;
+		return clientMap;
 	}
+
 
 	/**
 	 * {@inheritDoc}
@@ -239,21 +238,28 @@ public class DaoHibernate implements IDao {
 	@Override
 	public Map<String, Gestionnaire> getAllGestionnaires() {
 		Session session = sessionFactory.getCurrentSession();
-		@SuppressWarnings("unchecked")
-		List<Object> res = session.createCriteria(Gestionnaire.class).list();
-		Map<String, Gestionnaire> ret = new HashMap<String, Gestionnaire>();
-		for (Object gestionnaire : res) {
-			ret.put(((Gestionnaire) gestionnaire).getUserId(), (Gestionnaire) gestionnaire);
+		CriteriaBuilder builder = session.getCriteriaBuilder();
+		CriteriaQuery<Gestionnaire> criteriaQuery = builder.createQuery(Gestionnaire.class);
+		Root<Gestionnaire> root = criteriaQuery.from(Gestionnaire.class);
+		criteriaQuery.select(root);
+
+		List<Gestionnaire> gestionnaires = session.createQuery(criteriaQuery).getResultList();
+
+		Map<String, Gestionnaire> gestionnaireMap = new HashMap<>();
+		for (Gestionnaire gestionnaire : gestionnaires) {
+			gestionnaireMap.put(gestionnaire.getUserId(), gestionnaire);
 		}
-		return ret;
+
+		return gestionnaireMap;
 	}
+
 
 	/**
 	 * {@inheritDoc}
 	 */
 	@Override
 	public void disconnect() {
-		System.out.println("Déconnexion de la DAO.");
+		LOGGER.info("Déconnexion de la DAO.");
 	}
 
 }
