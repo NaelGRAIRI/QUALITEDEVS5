@@ -209,8 +209,10 @@ public class BanqueManager {
 	 */
 	public void createManager(String userId, String userPwd, String nom, String prenom, String adresse, boolean male)
 			throws TechnicalException, IllegalArgumentException, IllegalFormatException {
+		// Appel à la méthode createUser avec le bon paramètre pour manager
 		dao.createUser(nom, prenom, adresse, male, userId, userPwd, true, null);
 	}
+
 
 	/**
 	 * Méthode qui va appeler la DAO pour créer un nouveau client dans la BdD

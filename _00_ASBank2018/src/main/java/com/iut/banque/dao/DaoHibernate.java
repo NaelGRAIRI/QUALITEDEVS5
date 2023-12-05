@@ -43,24 +43,26 @@ public class DaoHibernate implements IDao {
 
 	private SessionFactory sessionFactory;
 
+	// Constructeur par défaut ajouté
+	public DaoHibernate() {
+		// Constructeur par défaut sans arguments
+	}
+
 	public DaoHibernate(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
-
 	/**
 	 * Setter pour la SessionFactory.
-	 *<p></p>
+	 * <p></p>
 	 * Cette méthode permet à Spring d'injecter la factory au moment de la
 	 * construction de la DAO.
 	 *
-	 * @param sessionFactory
-	 *            : la session factory nécessaire à la gestion des sessions
+	 * @param sessionFactory : la session factory nécessaire à la gestion des sessions
 	 */
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
-
 	/**
 	 * {@inheritDoc}
 	 * @throws IllegalOperationException
@@ -165,6 +167,10 @@ public class DaoHibernate implements IDao {
 		} else {
 			user = new Client(nom, prenom, adresse, male, userId, userPwd, numClient);
 		}
+
+		// Appel à la méthode setUserPwd pour hacher le mot de passe
+		user.setUserPwd(userPwd);
+
 		session.save(user);
 
 		return user;
