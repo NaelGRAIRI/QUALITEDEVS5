@@ -9,5 +9,5 @@ Ce projet, intitulé QUALITEDEVS5, a été développé dans le cadre du semestre
 - DIALLO Mamadou
 
 Le projet met l'accent sur l'application de bonnes pratiques de développement, la qualité du code, la gestion de configuration, les tests unitaires et d'intégration, ainsi que d'autres aspects liés à l'amélioration continue du logiciel. L'équipe travaille de concert pour garantir la qualité du code, la robustesse de l'application, et pour répondre aux besoins des utilisateurs finaux. Les membres de l'équipe sont engagés dans le processus de développement et s'efforcent de fournir un logiciel fiable et performant.
-
+# Explication du Projet
 
