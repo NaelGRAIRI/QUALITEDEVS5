@@ -41,6 +41,7 @@ Avant de commencer le processus d’installation, assurez-vous de disposer des �
 
 - **Java Development Kit (JDK) :** Bank IUT est un projet Java, donc vous aurez besoin d'avoir le JDK installé sur votre machine. Assurez-vous d'avoir la version recommandée dans les prérequis du projet.
 
+                             <img src="../QUALITEDEVS5/Indicateurs/Images/java-version.png" width="400" height="200">
 
 - **Apache Maven :** Bank IUT utilise Maven comme système de gestion de projet. Vous devez installer Maven sur votre système pour pouvoir construire et compiler le projet.
 
