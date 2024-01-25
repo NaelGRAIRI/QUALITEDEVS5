@@ -151,3 +151,15 @@ J
 WebContent/JSP/Connect.jsp,4/a/4ae6945a776f1f62d9870007c8a6aed1c2988f67
 L
 script/dumpSQL_JUnitTest.sql,c/3/c3b23b021d65f245a803a5ca277dc07615c09f26
+;
+qodana.yaml,8/5/85c3a901608a6b9adf48d245fa84828b66304e51
+Y
+).github/workflows/qodana_code_quality.yml,4/f/4f751ec70a5e7dcf5d05ba8965348b627e7b3e80
+X
+(.settings/org.eclipse.jdt.apt.core.prefs,d/7/d74b0b8ec87596793553a1fbd0595d9648a81b41
+>
+scannSonar.ban,1/2/12ad573a8a7f9843d03dc6e0be52b63a7654f3b3
+f
+6src/test/java/com/iut/banque/test/modele/UserTest.java,4/4/4454e735d114b4726f65a975738fc34d539ccc23
+K
+WebContent/style/styles.css,4/d/4d51ff848799077dd3878a79d6cab932826eecc0

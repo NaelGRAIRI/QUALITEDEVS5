@@ -57,6 +57,8 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/resources/com/iut/banque/test/facade/test/resources" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/WebContent" />
     </key>
@@ -67,7 +69,15 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.80">
+  <component name="RunManager" selected="JUnit.TestsBanqueManager.TestSuppressionDunClientAvecUnCompteDeSoldePositif">
+    <configuration name="All in _00_ASBank2018 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_00_ASBank2018" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in _00_ASBank2018" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,17 +86,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsBanqueManager.TestSuppressionDunClientAvecUnCompteDeSoldePositif" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="_00_ASBank2018" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.iut.banque.test.modele.*" />
+          <option name="PATTERN" value="com.iut.banque.test.facade.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.iut.banque.test.modele" />
-      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.modele.TestsClient" />
-      <option name="METHOD_NAME" value="testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
+      <option name="PACKAGE_NAME" value="com.iut.banque.test.facade" />
+      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.facade.TestsBanqueManager" />
+      <option name="METHOD_NAME" value="TestSuppressionDunClientAvecUnCompteDeSoldePositif" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsDaoHibernate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_00_ASBank2018" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iut.banque.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iut.banque.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.dao.TestsDaoHibernate" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsDaoHibernate.testGetCompteAvecDecouvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_00_ASBank2018" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iut.banque.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iut.banque.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iut.banque.test.dao.TestsDaoHibernate" />
+      <option name="METHOD_NAME" value="testGetCompteAvecDecouvert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,15 +268,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TestsBanqueManager.TestSuppressionDunClientAvecUnCompteDeSoldePositif" />
+      <item itemvalue="JUnit.TestsDaoHibernate" />
+      <item itemvalue="JUnit.TestsDaoHibernate.testGetCompteAvecDecouvert" />
+      <item itemvalue="JUnit.All in _00_ASBank2018 (1)" />
       <item itemvalue="JUnit.All in _00_ASBank2018" />
-      <item itemvalue="JUnit.TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
       <item itemvalue="Maven._00_ASBank2018 [clean,install]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.80" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestsBanqueManager.TestSuppressionDunClientAvecUnCompteDeSoldePositif" />
+        <item itemvalue="JUnit.All in _00_ASBank2018 (1)" />
         <item itemvalue="JUnit.All in _00_ASBank2018" />
-        <item itemvalue="JUnit.TestsClient.testMethodeCheckFormatUserIdClientAvecTrailingZeros" />
+        <item itemvalue="JUnit.TestsDaoHibernate.testGetCompteAvecDecouvert" />
+        <item itemvalue="JUnit.TestsDaoHibernate" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +318,7 @@
       <workItem from="1698398874921" duration="1096000" />
       <workItem from="1699275225519" duration="598000" />
       <workItem from="1699446913980" duration="821000" />
+      <workItem from="1704658179519" duration="5118000" />
     </task>
     <servers />
   </component>
@@ -278,9 +326,11 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__2_.ic" NAME="All in _00_ASBank2018 (2) Coverage Results" MODIFIED="1701512503787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__3_.ic" NAME="All in _00_ASBank2018 (3) Coverage Results" MODIFIED="1701691175370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__2_.ic" NAME="All in _00_ASBank2018 (2) Coverage Results" MODIFIED="1706206078008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__3_.ic" NAME="All in _00_ASBank2018 (3) Coverage Results" MODIFIED="1706207567612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__1_.ic" NAME="All in _00_ASBank2018 (1) Coverage Results" MODIFIED="1706209044314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018__4_.ic" NAME="All in _00_ASBank2018 (4) Coverage Results" MODIFIED="1701692950253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/_00_ASBank2018$Tomcat_9_0_80.ic" NAME="Tomcat 9.0.80 Coverage Results" MODIFIED="1699529335900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/_00_ASBank2018$All_in__00_ASBank2018.ic" NAME="All in _00_ASBank2018 Coverage Results" MODIFIED="1706208595125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

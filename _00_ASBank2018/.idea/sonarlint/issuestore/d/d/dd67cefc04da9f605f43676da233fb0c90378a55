@@ -1,9 +1,0 @@
-
-;
-java:S3010-" Remove this assignment of "dao".(ÿ­¼ƒıÿÿÿÿ
-@	java:S106+"+Replace this use of System.out by a logger.(Ğ—Íè
-@	java:S106,"+Replace this use of System.out by a logger.(ªÕöÊ
-Q	java:S125."<This block of commented-out lines of code should be removed.(ÇÖÛò
-@	java:S1065"+Replace this use of System.out by a logger.(Ğ—Íè
-@	java:S1066"+Replace this use of System.out by a logger.(ªÕöÊ
-P	java:S1257"<This block of commented-out lines of code should be removed.(Ššœ

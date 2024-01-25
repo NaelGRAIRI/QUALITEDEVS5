@@ -1,6 +1,6 @@
 
-b
-java:S1192Õ"FDefine a constant instead of duplicating this literal "ERROR" 8 times.(›½…“şÿÿÿÿ
-=
-java:S1948"(Make "banque" transient or serializable.(›ÒËw
-A	java:S106˜"+Replace this use of System.out by a logger.(¾‡Ü
+
+java:S1192à"FDefine a constant instead of duplicating this literal "ERROR" 8 times.(›½…“şÿÿÿÿ8Ğçø¤Ã1J$53c9e70b-df1d-47ad-8948-b3bc36eabf9c
+j
+java:S1948"(Make "banque" transient or serializable.(›ÒËw8Şéø¤Ã1J$60a447ca-a774-45bd-9e68-777ec5852a65
+n	java:S106£"+Replace this use of System.out by a logger.(¾‡Ü8Âêø¤Ã1J$bdd8df8b-c4fe-4902-a74c-88670924be10
