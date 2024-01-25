@@ -1,0 +1,50 @@
+/* Ajoutez vos styles généraux ici */
+
+.btnLogout,
+.btnBack {
+    margin-bottom: 10px;
+}
+
+/* Styles pour le formulaire de login */
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles pour la table des comptes */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style pour les soldes négatifs */
+.soldeNegatif {
+    color: red;
+}
+
+/* Style pour les messages d'erreur */
+.failure {
+    color: red;
+}

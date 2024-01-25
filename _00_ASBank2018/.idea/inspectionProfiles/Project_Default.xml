@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="mysql:mysql-connector-java" />
+          <option value="org.apache.struts:struts2-core" />
+          <option value="org.hibernate.javax.persistence:hibernate-jpa-2.1-api" />
+          <option value="com.sun.xml.bind:jaxb-impl" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
