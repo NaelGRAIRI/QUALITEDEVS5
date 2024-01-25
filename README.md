@@ -35,19 +35,19 @@ Bank IUT est un projet développé en Java par notre équipe d’étudiants de l
 Dans cette documentation, nous vous expliquerons en détail comment installer Bank IUT à partir de notre référentiel GIT. Cette méthode d’installation vous permettra d’obtenir la version la plus récente du projet et de bénéficier des mises à jours ultérieures.
 
 Nous vous guiderons pas à pas à travers le processus d’installation, en vous fournissant des instructions claires, des captures d’écran et des exemples.
-
 ## Prérequis
 Avant de commencer le processus d’installation, assurez-vous de disposer des éléments suivants sur votre système :
 
 - **Java Development Kit (JDK) :** Bank IUT est un projet Java, donc vous aurez besoin d'avoir le JDK installé sur votre machine. Assurez-vous d'avoir la version recommandée dans les prérequis du projet.
 
-                             <img src="../QUALITEDEVS5/Indicateurs/Images/java-version.png" width="400" height="200">
+![Java Version](../QUALITEDEVS5/Indicateurs/Images/java-version.png)
 
 - **Apache Maven :** Bank IUT utilise Maven comme système de gestion de projet. Vous devez installer Maven sur votre système pour pouvoir construire et compiler le projet.
 
 - **Apache Tomcat :** Bank IUT utilise Tomcat comme serveur d'application. Vous devez avoir Tomcat installé sur votre machine pour déployer et exécuter l'application.
 
 - **Base de données :** Assurez-vous d'avoir une base de données compatible avec le projet (mentionnée dans la section de configuration de la base de données).
+
 
 ## Récupération du projet
 Sur le Git que nous vous transmis, veuillez récupérer l’entièreté du dossier _00_ASBank2018 (dossier comprenant le code de l’application).
