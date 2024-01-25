@@ -41,7 +41,7 @@ Avant de commencer le processus d’installation, assurez-vous de disposer des �
 
 - **Java Development Kit (JDK) :** Bank IUT est un projet Java, donc vous aurez besoin d'avoir le JDK installé sur votre machine. Assurez-vous d'avoir la version recommandée dans les prérequis du projet.
 
-    <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
+                                   <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
 
 - **Apache Maven :** Bank IUT utilise Maven comme système de gestion de projet. Vous devez installer Maven sur votre système pour pouvoir construire et compiler le projet.
 
@@ -59,14 +59,17 @@ Sur le Git que nous vous transmis, veuillez récupérer l’entièreté du dossi
 ## Maven
 Maven est l’outil qui nous permettra de build notre application. Pour cela, nous allons devoir le configurer.
 Pour configurer Maven, cliquez sur les 3 points à côté du logo Maven : 
-    <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
+
+                                     <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
 
 Cliquez ensuite sur édit :
-    <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
+ 
+                                   <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
 
 
 Reprenez bien les mêmes paramètre de configuration que la capture d’écran suivante :
-    <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
+
+                                   <img src="../QUALITEDEVS5/Indicateurs /java-version.png" width="400" height="400">
 
     Pour cette version d’installation nous lancerons l’application sans les tests. Veuillez donc à ne pas oublier l’option « Skip Tests ».
 
