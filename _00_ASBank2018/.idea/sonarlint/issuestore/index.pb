@@ -32,10 +32,6 @@ I
 WebContent/JSP/Footer.jsp,8/f/8f877d2e1a68290e59398f9e131a09bd2958c7ab
 G
 WebContent/js/jquery.js,4/0/40d378715432c9fc0db0d0395e8fdd4caac15392
-`
-0src/test/resources/TestsDaoHibernate-context.xml,e/3/e3726c479de70730f3470a152bf7ac85ea864c0d
-a
-1src/test/resources/TestsBanqueManager-context.xml,f/a/fa1d0724248e5d7b4cb6f683fe48c7b7dd64a729
 N
 WebContent/js/jsCreerCompte.js,4/5/45674365479e6423d3c31693d1d3501b28d84e36
 O
@@ -151,15 +147,21 @@ J
 WebContent/JSP/Connect.jsp,4/a/4ae6945a776f1f62d9870007c8a6aed1c2988f67
 L
 script/dumpSQL_JUnitTest.sql,c/3/c3b23b021d65f245a803a5ca277dc07615c09f26
-;
-qodana.yaml,8/5/85c3a901608a6b9adf48d245fa84828b66304e51
 Y
 ).github/workflows/qodana_code_quality.yml,4/f/4f751ec70a5e7dcf5d05ba8965348b627e7b3e80
 X
 (.settings/org.eclipse.jdt.apt.core.prefs,d/7/d74b0b8ec87596793553a1fbd0595d9648a81b41
->
-scannSonar.ban,1/2/12ad573a8a7f9843d03dc6e0be52b63a7654f3b3
 f
 6src/test/java/com/iut/banque/test/modele/UserTest.java,4/4/4454e735d114b4726f65a975738fc34d539ccc23
 K
 WebContent/style/styles.css,4/d/4d51ff848799077dd3878a79d6cab932826eecc0
+p
+@src/test/resources/test/resources/TestsBanqueManager-context.xml,f/f/ff2d92a75affc380e70ec41001cf5149b2ab960b
+o
+?src/test/resources/test/resources/TestsDaoHibernate-context.xml,8/2/824d97f1222ab29aef15a45ebea520480ce193b5
+o
+?src/test/java/com/iut/banque/test/modele/TestsGestionnaire.java,8/c/8cb9d148179a453dc6617773c6db98f28194dde8
+Z
+*src/test/java/controller/TestsConnect.java,4/d/4d5985bc14b8797b835cf56d541dee4587ae1ebd
+n
+>src/test/java/com/iut/banque/test/controller/TestsConnect.java,a/0/a028b676504685b5cb239c9d2983acfac79bd0e9

@@ -124,7 +124,7 @@
 |root||root|localhost|grant option|G
 performance_schema|schema||mysql.session|localhost|SELECT|G
 sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
-      <ServerVersion>5.7.34</ServerVersion>
+      <ServerVersion>5.7.39</ServerVersion>
     </root>
     <collation id="2" parent="1" name="big5_chinese_ci">
       <Charset>big5</Charset>
@@ -859,8 +859,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="232" parent="1" name="allard19u_coa_banque">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-12-03.23:07:29</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-12-03.21:07:29</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-01-25.23:02:04</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-01-25.21:02:04</LocalIntrospectionTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="233" parent="1" name="gestionCommandes">
@@ -974,7 +974,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>4</Position>
     </column>
     <column id="261" parent="247" name="userPwd">
-      <DasType>varchar(45)|0s</DasType>
+      <DasType>varchar(250)|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="262" parent="247" name="male">

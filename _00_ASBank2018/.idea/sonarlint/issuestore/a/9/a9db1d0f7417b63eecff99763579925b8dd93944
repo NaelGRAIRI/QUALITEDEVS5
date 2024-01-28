@@ -1,0 +1,8 @@
+
+c
+java:S3010-" Remove this assignment of "dao".(–…äï8Ê¤Ó“Ô1J$0eae8fd0-51bd-4cdc-8c7d-b7474598c762
+m	java:S106+"+Replace this use of System.out by a logger.(Ğ—Íè8Ô¤Ó“Ô1J$1499b17b-7f84-47cc-a5cd-3cd128da6fdc
+r	java:S106,"+Replace this use of System.out by a logger.(¡şšøÿÿÿÿ8Õ¤Ó“Ô1J$025c8f7f-2b87-4aff-ade6-e4d9ceffbc8b
+r	java:S1064"+Replace this use of System.out by a logger.(¡şšøÿÿÿÿ8â¤Ó“Ô1J$d7a6ac6d-efc4-4828-9804-2211cefade03
+l
+java:S1905>")Remove this unnecessary cast to "Compte".(”ÊÄÂ8•ô—¦Ô1J$0b2b524f-4fcf-4d01-bef8-b630f13bb22b

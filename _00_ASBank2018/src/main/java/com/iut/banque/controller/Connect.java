@@ -14,12 +14,16 @@ import com.iut.banque.modele.Client;
 import com.iut.banque.modele.Compte;
 import com.iut.banque.modele.Utilisateur;
 
+import javax.servlet.ServletContext;
+
 public class Connect extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 	private String userCde;
 	private String userPwd;
 	private BanqueFacade banque;
+	private final ServletContext servletContext;
+
 
 	/**
 	 * Constructeur de la classe Connect
@@ -27,7 +31,8 @@ public class Connect extends ActionSupport {
 	 * @return Un objet de type Connect avec façade BanqueFacade provenant de sa
 	 *         factory
 	 */
-	public Connect() {
+	public Connect(ServletContext servletContext) {
+		this.servletContext = servletContext;
 		System.out.println("In Constructor from Connect class ");
 		ApplicationContext context = WebApplicationContextUtils
 				.getRequiredWebApplicationContext(ServletActionContext.getServletContext());
@@ -138,5 +143,10 @@ public class Connect extends ActionSupport {
 		banque.logout();
 		return "SUCCESS";
 	}
+
+	public void setBanque(BanqueFacade banque) {
+		this.banque = banque;
+	}
+
 
 }

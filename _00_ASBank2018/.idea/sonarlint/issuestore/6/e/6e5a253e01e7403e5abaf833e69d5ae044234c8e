@@ -1,0 +1,16 @@
+
+‰
+java:S11926"FDefine a constant instead of duplicating this literal "ERROR" 3 times.(á·„8ÆîÛªÔ1J$4d077076-1dd2-42a5-859c-98d77fba9fd5
+j
+java:S1948"(Make "banque" transient or serializable.(›ÒËw8£—Ó“Ô1J$baf5a3fd-b14d-401f-aafe-626595b374b6
+x
+java:S1948"0Make "servletContext" transient or serializable.(×€¼¦ûÿÿÿÿ8ÆİÚªÔ1J$4af9bfdb-31a8-49b8-a1c7-958484225048
+r	java:S106$"+Replace this use of System.out by a logger.(ÍÁáöüÿÿÿÿ8úüÛªÔ1J$a190272b-861c-43a5-829d-ffd6f5e39e97
+m	java:S1063"+Replace this use of System.out by a logger.(üĞå”8ŸıÛªÔ1J$e3ee269b-ebd9-454c-8bd6-7a25e23f702c
+r	java:S106D"+Replace this use of System.out by a logger.(®‹¸üûÿÿÿÿ8áÿÛªÔ1J$c8d49d6c-c458-4b58-b907-624c4405a6fb
+r	java:S106G"+Replace this use of System.out by a logger.(ŞÆĞşüÿÿÿÿ8¨€ÜªÔ1J$34144f3e-0d4a-4578-b119-6cbdbd4a62dd
+r	java:S106J"+Replace this use of System.out by a logger.(³Ö»õÿÿÿÿÿ8í€ÜªÔ1J$ab9dd052-5cc0-49a4-86b3-5d77c24c8941
+m	java:S106M"+Replace this use of System.out by a logger.(öØÈ¢8ÜªÔ1J$af9ab94d-c9b1-4526-8268-c43bd789310c
+n	java:S106"+Replace this use of System.out by a logger.(Ÿ–˜Ñ8ØƒÜªÔ1J$64a55791-e46d-45c9-8bfa-e83b27d46798
+z
+java:S1068"2Remove this unused "servletContext" private field.(×€¼¦ûÿÿÿÿ8³ÿ×ªÔ1J$f5c2d9bc-d145-4709-92ac-2f80e3384b0e

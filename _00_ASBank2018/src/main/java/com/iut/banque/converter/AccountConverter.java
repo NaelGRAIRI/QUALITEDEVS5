@@ -43,16 +43,13 @@ public class AccountConverter extends StrutsTypeConverter {
 		System.out.println("=========================");
 		System.out.println("Création du convertisseur de compte");
 		AccountConverter.dao = dao;
-		//System.out.println("DAO injectée : " + dao);
 	}
 
 	/**
 	 * 	Constructeur sans paramêtre pour le AccountConverter
 	 */
 	public AccountConverter() {
-		System.out.println("=========================");
 		System.out.println("Création du convertisseur de compte");
-		//System.out.println("DAO : " + dao);
 	}
 
 	/**
