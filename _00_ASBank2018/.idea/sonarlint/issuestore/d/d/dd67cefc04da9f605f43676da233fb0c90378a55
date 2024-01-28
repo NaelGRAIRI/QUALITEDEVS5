@@ -1,9 +1,0 @@
-
-h
-java:S3010-" Remove this assignment of "dao".(ÿ­¼ƒıÿÿÿÿ8¥èÓ“Ô1J$7f554b6d-11f1-4ef2-85b4-2aacdadb4485
-m	java:S106+"+Replace this use of System.out by a logger.(Ğ—Íè8·èÓ“Ô1J$63690f71-f2b4-4e27-b955-abdeff6bb423
-m	java:S106,"+Replace this use of System.out by a logger.(ªÕöÊ8ÊèÓ“Ô1J$0710fdff-9a1f-4d61-b554-fa28884a96aa
-~	java:S125."<This block of commented-out lines of code should be removed.(ÇÖÛò8ÕèÓ“Ô1J$1727d189-dee1-4829-a478-e758ba853ce0
-m	java:S1065"+Replace this use of System.out by a logger.(Ğ—Íè8×èÓ“Ô1J$8e0cdec6-394d-4580-912d-d9b97972b757
-m	java:S1066"+Replace this use of System.out by a logger.(ªÕöÊ8ÙèÓ“Ô1J$7578fb5e-6590-42bf-bc9c-d3a79a897124
-}	java:S1257"<This block of commented-out lines of code should be removed.(Ššœ8ÛèÓ“Ô1J$d67c1565-32e2-4598-871e-604774f8a104
