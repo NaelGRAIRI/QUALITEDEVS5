@@ -14,7 +14,7 @@ Le projet met l'accent sur l'application de bonnes pratiques de développement, 
 
 ## Documentation d'installation et de configuration
 
-Afin d'installer le et de lancer le projet, vous pouvez vous référer à la [Documentation d'installation](https://github.com/NaelGRAIRI/QUALITEDEVS5/blob/9aea989ec7c5e911503a59d0d26a5d6cdbfc95fa/Documentation/Doc%20Installation.pdf). Elle vous donnera toutes les précisions pour lancer et utiliser correctement l'application dans les meilleures conditions.
+Afin d'installer le et de lancer le projet, vous pouvez vous référer à la [Documentation d'installation](Documentation/Doc Installation.pdf). Elle vous donnera toutes les précisions pour lancer et utiliser correctement l'application dans les meilleures conditions.
 
 ## Table des matières
 1. [Introduction](#introduction)
