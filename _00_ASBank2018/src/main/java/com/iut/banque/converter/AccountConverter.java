@@ -73,7 +73,7 @@ public class AccountConverter extends StrutsTypeConverter {
 	@Override
 	public String convertToString(Map context, Object value) {
 		Compte compte = (Compte) value;
-		return compte == null ? null : compte.getNumeroCompte();
+		 return compte == null ? null : compte.getNumeroCompte();
 	}
 
 }
