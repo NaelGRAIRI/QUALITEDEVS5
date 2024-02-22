@@ -64,11 +64,6 @@
 			<version>5.3.20.Final</version>
 		</dependency>
 
-		<!-- <dependency> -->
-		<!-- <groupId>org.hibernate</groupId> -->
-		<!-- <artifactId>hibernate-c3p0</artifactId> -->
-		<!-- <version>5.1.0.Final</version> -->
-		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -199,24 +194,11 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>2.0.7</version>
 		</dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>5.3.1</version>
-            <scope>test</scope>
-        </dependency>
 		<dependency>
-			<groupId>net.bytebuddy</groupId>
-			<artifactId>byte-buddy</artifactId>
-			<version>1.11.20</version> <!-- Utilisez la version la plus récente disponible -->
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>2.28.2</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>net.bytebuddy</groupId>
-			<artifactId>byte-buddy-agent</artifactId>
-			<version>1.11.20</version> <!-- Utilisez la version la plus récente disponible -->
-			<scope>test</scope>
-		</dependency>
-
-    </dependencies>
+	</dependencies>
 </project>
